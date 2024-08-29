@@ -1,0 +1,35 @@
+/* src/components/GridView.module.css */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.gridItem {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gridItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gridItem div {
+    margin-bottom: 10px;
+}
+
+.gridItem div:first-child {
+    font-size: 22px;
+    font-weight: bold;
+}

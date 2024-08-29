@@ -1,0 +1,28 @@
+/* src/components/App.module.css */
+.viewToggleButton {
+    background: linear-gradient(135deg, #ff006e, #8338ec);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.viewToggleButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.viewToggleButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 0, 110, 0.4);
+}
+
+.viewToggleButton:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

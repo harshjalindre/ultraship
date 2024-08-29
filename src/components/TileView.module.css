@@ -1,0 +1,49 @@
+/* src/components/TileView.module.css */
+.tileView {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.tile {
+    background: #2a2a72;
+    padding: 20px;
+    border-radius: 15px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+
+
+.tile:hover::before {
+    opacity: 1;
+}
+
+
+.tile button {
+    background: #3a86ff;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.tile button:hover {
+    background: #8338ec;
+    opacity: 0.8;
+}

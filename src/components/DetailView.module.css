@@ -1,0 +1,66 @@
+/* src/components/DetailView.module.css */
+.detailView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    transition: opacity 0.3s;
+}
+
+.detailContent {
+    background: #2a2a72;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    animation: pop-up 0.3s ease-out;
+}
+
+.detailContent h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #ff006e, #8338ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.detailContent p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.detailContent button {
+    background: #ff006e;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.detailContent button:hover {
+    background: #8338ec;
+}
+
+@keyframes pop-up {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
